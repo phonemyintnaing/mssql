@@ -1,6 +1,4 @@
 --mssql example: similar to 'group-concat' function in mysql
-
-
 SELECT
       m.maskid
     , m.maskname
