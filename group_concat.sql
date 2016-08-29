@@ -1,4 +1,4 @@
---example: similar to 'group-concat' function 
+--mssql example: similar to 'group-concat' function in mysql
 
 
 SELECT
