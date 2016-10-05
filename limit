@@ -1,0 +1,9 @@
+//select top 100 rows
+SELECT TOP (100) * from a ;
+
+// skip and fetch
+ SELET * FROM a  
+OFFSET $m ROWS -- skip n rows
+  FETCH NEXT $n ROWS ONLY; -- take 10 rows ";
+  
+  
