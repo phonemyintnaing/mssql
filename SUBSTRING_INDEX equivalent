@@ -1,0 +1,12 @@
+#SUBSTRING_INDEX -> postivite find delimiter @ from right, negative find @ from left and trim the result  in mysql;
+
+SELECT 
+SUBSTRING_INDEX('iamphonemyint9@gmail.com', '@', -1) AS emailServer ; 
+# RETURN ->  @gmail.com
+
+
+#FUNCTION in mssql 
+SELECT 
+RIGHT('iamphonemyint9@gmail.com', LEN('iamphonemyint9@gmail.com') - CHARINDEX('@', 'iamphonemyint9@gmail.com')) emailServer;
+
+#RETURN -> @gmail.com
