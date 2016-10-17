@@ -3,6 +3,7 @@ SELECT TOP (100) * from a ;
 
 // skip and fetch
  SELET * FROM a  
+ order by a.id  -- this need => order by clause
 OFFSET $m ROWS -- skip n rows
   FETCH NEXT $n ROWS ONLY; -- take 10 rows ";
   
