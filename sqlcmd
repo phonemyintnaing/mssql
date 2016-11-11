@@ -1,0 +1,5 @@
+#run query using sqlcmd utility
+-- sqlcmd.exe=> C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+
+sqlcmd -U myLogin -P myPassword -S MyServerName -d MyDatabaseName 
+-Q "query"
