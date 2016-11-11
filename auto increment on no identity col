@@ -1,0 +1,14 @@
+#case=> no identity col with existing data, autoincrement (no FK)
+
+1. check if there is identity at ai col
+select columnproperty(object_id('table_name'),'column name','IsIdentity'); -- return boolean
+
+2.if no, create duplicate table with identity
+
+3.set identity insert on, insert org data to duplicate , set identity insert off
+SET IDENTITY_INSERT table_name ON, insert into, SET IDENTITY_INSERT table_name OFF
+
+4.if two table equal, drop org table 
+
+5.rename, duplicate to org table name
+exec sp_rename 'schema.old_table_name', 'new_table_name'
