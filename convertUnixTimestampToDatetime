@@ -1,0 +1,7 @@
+ -- convert unixtimestamp to datetime
+ 
+SELECT dateadd(ss, cast([UNIXTIMESTAMP_COLUMN] as int), '1970-01-01 00:00:00'); 
+
+-- With datetime with UTC time zone difference
+SELECT	DATEADD(hh, DATEDIFF(hh, getutcdate(), getdate()), dateadd(ss, cast([UNIXTIMESTAMP_COLUMN] as int), '1970-01-01 00:00:00'));
+			 
