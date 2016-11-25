@@ -1,0 +1,3 @@
+SELECT ROUND ( 123.456 , 2 , 1 ) FROM TABLE;
+
+When the third parameter != 0 it truncates rather than rounds
