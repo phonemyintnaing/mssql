@@ -1,0 +1,4 @@
+
+#get date in numbers ($days=> 2- monday, 3 - tuesday)
+
+DATEPART(DW, date_column) IN ($days)
